@@ -1,4 +1,4 @@
-# siamese_nn_visual
+# siamese nn clustering of MNIST handwritten digits visual
 siamese neural network visualized (example) </br>
 unclean/unoptimized code it should never be used. </br>
 I don't make use of the triplet loss yet.. </br>
