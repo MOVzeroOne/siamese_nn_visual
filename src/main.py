@@ -60,7 +60,7 @@ def contrastive_loss(x_0,x_1,y,m=1):
     #margin > 0
     #y = 1 is dissimilar and y = 0 is similair
     
-    return torch.sum((1-y)*distance(x_0,x_1)*0.5 + (y)*torch.max(torch.zeros(x_0.size(0)),m-distance(x_0,x_1)))*0.5 
+    return torch.sum((1-y)*distance(x_0,x_1)*0.5 + (y)*torch.max(torch.zeros(x_0.size(0)),m-distance(x_0,x_1))*0.5)
 
 def batch_sample(numbers_used,BATCH_SIZE,dataset):
     chosen = [np.random.choice(numbers_used,2) for _ in range(BATCH_SIZE)]
